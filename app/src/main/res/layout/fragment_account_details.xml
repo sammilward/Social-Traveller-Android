@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screenWidthMargin"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/formHeightMargin"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtFirstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
+
+    <LinearLayout
+        android:id="@+id/LLDateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/txtLastName"
+        app:layout_constraintStart_toStartOf="@+id/txtLastName"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName">
+
+        <TextView
+            android:id="@+id/lblUsersDOB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnChooseDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Choose DOB" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLCountryOfBirth"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/LLDateOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/LLDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/LLDateOfBirth">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country of Birth: "
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spnBirthCountry"
+            android:layout_width="0sp"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="@+id/LLDateOfBirth"
+            app:layout_constraintStart_toStartOf="@+id/btnRegister"></Spinner>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        app:layout_constraintEnd_toEndOf="@+id/LLCountryOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/LLCountryOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/LLCountryOfBirth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

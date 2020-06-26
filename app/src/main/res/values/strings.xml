@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">The Social Traveler</string>
+
+    <string name="clientId">TheSocialAndroidMobile</string>
+    <string name="clientSecret">socialtraveler</string>
+
+    <string name="domainUrl">https://thesocialtraveler.ddns.net</string>
+
+    <string name="identityLocation">/IdentityService</string>
+    <string name="tokenEndpoint">/connect/token</string>
+
+    <string name="userLocation">/UserAPI/v1/user</string>
+    <string name="usersLocation">/UserAPI/v1/users</string>
+    <string name="routeLocation">/RouteAPI/v1/route</string>
+    <string name="routesLocation">/RouteAPI/v1/routes</string>
+    <string name="friendLocation">/FriendAPI/v1/friend</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">The Social Traveller</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="action_like">Like</string>
+    <string name="action_unlike">Unlike</string>
+    <string name="action_send_friend_request">Send Friend Request</string>
+    <string name="action_remove_friend">Remove Friend</string>
+    <string name="action_accept_friend_request">Accept Friend Request</string>
+    <string name="action_reject_friend_request">Reject Friend Request</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_people">People</string>
+    <string name="menu_friends">Friends</string>
+    <string name="menu_routes">Routes</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_account_details">Account Details</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_remove_account">Remove Account</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
